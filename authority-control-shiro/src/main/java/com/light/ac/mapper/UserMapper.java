@@ -1,14 +1,13 @@
 package com.light.ac.mapper;
 
-import java.util.List;
-import java.util.Map;
-
+import com.light.ac.domain.User;
 import org.apache.ibatis.annotations.Param;
-
+import org.springframework.stereotype.Repository;
 import tk.mybatis.mapper.common.Mapper;
 
-import com.light.ac.domain.User;
-
+import java.util.List;
+import java.util.Map;
+@Repository
 public interface UserMapper extends Mapper<User>{
 
 	User getUserByUserName(String userName);

@@ -3,10 +3,11 @@ package com.light.ac.mapper;
 import java.io.Serializable;
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
 import tk.mybatis.mapper.common.Mapper;
 
 import com.light.ac.domain.Permission;
-
+@Repository
 public interface PermissionMapper extends Mapper<Permission>{
 
 	/**

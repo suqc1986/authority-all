@@ -5,10 +5,11 @@ import java.util.Map;
 
 import org.apache.ibatis.annotations.Param;
 
+import org.springframework.stereotype.Repository;
 import tk.mybatis.mapper.common.Mapper;
 
 import com.light.ac.domain.Role;
-
+@Repository
 public interface RoleMapper extends Mapper<Role>{
 
 	void deleteRolePermissionByRoleId(int roleId);
